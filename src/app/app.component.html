@@ -1,0 +1,12 @@
+<div class="main-head">
+  <h1>Purchase Store</h1>
+  <section>
+    <div *ngFor="let item of cartBucket">
+      <p><strong>Product:</strong> {{item.name}} <strong>Qty:</strong> {{item.qty}} <strong>Price:</strong> {{item.qty * item.price}}</p>
+    </div>
+    <button class="btn-pay">Pay Now <strong>₹{{calcPrice()}}</strong></button>
+  </section>
+</div>
+
+<app-product
+*ngFor="let item of data" [pdata]="item" (updateCartEvt)="update($event)"></app-product>

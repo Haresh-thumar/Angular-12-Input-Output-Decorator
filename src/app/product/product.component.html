@@ -1,0 +1,12 @@
+<div class="cart-list">
+  <p><strong>Product Name: </strong>{{productData.name}}</p>
+  <p><strong>Qty: </strong>{{productData.qty}}</p>
+  <p>
+    <strong>Price: </strong>{{productData.qty * productData.price}}<br>
+    <button class="btn-add" (click)="updateCart()">{{isAddedToCart ? 'Remove from cart' : 'Add to cart'}}</button>
+  </p>
+
+  <button class="btn-dec" (click)="decQty()" [disabled]="disable" [class.btn-bg]="btnBg">-</button>
+  <button class="btn-inc" (click)="incQty()">+</button>
+  <br><br>
+</div>

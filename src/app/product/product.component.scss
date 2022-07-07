@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cart-list {
+  width: 250px;
+  padding: 10px 20px;
+  border: 2px solid #eee;
+}
+
+button {
+  display: inline-flex;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.btn-dec {
+  background: #ff5982;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #000;
+  padding: 4px 14px 4px 14px;
+}
+
+.btn-inc {
+  background: #4955c7;
+  color: #fff;
+  font-size: 20px;
+  border: 1px solid #000;
+  padding: 4px 12px 4px 12px;
+}
+
+.btn-add {
+  background: #EFD345;
+  border: 1px solid #000;
+  padding: 8px 13px 8px 13px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.btn-bg {
+  background: #ffb4c7!important;
+  border: 1px solid rgb(0, 0, 0, 0.2);
+  color: #000;
+}
